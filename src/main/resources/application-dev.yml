@@ -1,0 +1,25 @@
+server:
+  port: 21100
+  servlet:
+    context-path: /demo
+spring:
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/demo?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: djfy1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+upload:
+  w-upload: C:/upload
+  l-upload: /home/upload
+download: /file
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.djfy.demo.model
+logging:
+  path: C:/logs
+  level:
+    com.djfy.demo.dao: debug

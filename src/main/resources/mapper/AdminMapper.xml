@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.djfy.demo.dao.AdminMapper" >
+  <resultMap id="BaseResultMap" type="com.djfy.demo.model.Admin" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="age" property="age" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, name, age
+  </sql>
+  <select id="checkWhat" resultMap="BaseResultMap" parameterType="com.djfy.demo.model.Admin">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM
+    admin a
+    <where>
+      <if test="a.name != null and a.name != ''">
+        and a.name = #{a.name,jdbcType=VARCHAR}
+      </if>
+
+    </where>
+  </select>
+</mapper>
