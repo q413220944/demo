@@ -1,19 +1,13 @@
 package com.djfy.demo.api;
 
-import cn.hutool.core.date.DateUtil;
-import cn.hutool.crypto.SecureUtil;
 import com.djfy.demo.model.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Objects;
 
 /**
  * @author QuinPluto
@@ -23,9 +17,9 @@ import java.util.Objects;
 @RequestMapping("/web")
 public class AdminWeb {
 
-    @ApiOperation(value = "ceshi接口")
+    @ApiOperation(value = "测试接口")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "a", value = "aceshi ", dataType = "string", paramType = "query")
+            @ApiImplicitParam(name = "a", value = "测试字段 ", dataType = "string", paramType = "query")
     })
     @PostMapping("/admin/a")
     public Object registered(String a){

@@ -1,7 +1,5 @@
 package com.djfy.demo;
 
-import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.date.DateUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.djfy.demo.dao.AdminMapper;
 import com.djfy.demo.model.Admin;

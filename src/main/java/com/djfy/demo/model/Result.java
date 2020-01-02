@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * @author QuinPluto
  */
-@SuppressWarnings("ALL")
+
 @Data
 public class Result {
 

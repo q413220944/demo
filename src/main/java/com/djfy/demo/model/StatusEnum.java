@@ -4,6 +4,7 @@ package com.djfy.demo.model;
  * 状态枚举类
  * @author QuinPluto
  */
+
 public enum StatusEnum {
     /**
      *

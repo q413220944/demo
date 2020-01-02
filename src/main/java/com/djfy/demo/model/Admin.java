@@ -2,8 +2,11 @@ package com.djfy.demo.model;
 
 import lombok.Data;
 
-@Data
+/**
+ * @author QuinPluto
+ */
 
+@Data
 public class Admin {
     private Long id;
     private String name;
